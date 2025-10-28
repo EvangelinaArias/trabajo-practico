@@ -146,6 +146,20 @@ section h2{
     background-color: #f9f9f9;
 }
 
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.novedades {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    padding: 10px 0px;
+    p {width: 100%;}
+}
+
 .form-contacto{
     max-width: 500px;
     margin: 0 auto;

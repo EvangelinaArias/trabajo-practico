@@ -92,34 +92,47 @@
             <h2>Contactanos</h2>
             <p>Dejanos tu consulta y te contestaremos en la brevedad.</p>
             <form class="form-contacto">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-                <label for="email">Correo electronico</label>
-                <input type="email" id="email" name="email" placeholder="tuemail@email.com" required>
-
-                <label for="telefono">Telefono</label>
-                <input type="telefono" id="telefono" name="telefono" placeholder="Ej:351-12345678">
-
-                <label for="motivo">Motivo de consulta</label>
-                <select name="motivo" id="motivo" required>
-                    <option value="">Selecciona una opcion</option>
-                    <option value="compra">Consulta sobre compra</option>
-                    <option value="envio">Consulta sobre envio</option>
-                    <option value="otro">Otro</option>
-                </select>
-
-                <p>¿Querés recibir novedades?</p>
-                <label><input type="radio" name="novedades" value="si">Si</label>
-                <label><input type="radio" name="novedades" value="no">No</label>
-
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribi tu mensaje"></textarea>
-
-                <div class="botones-form">
-                    <button type="submit" class="btn">Enviar</button>
-                    <button type="reset" class="btn">Borrar</button>
+                <div class="form-input">
+                    
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                 </div>
+                <div class="form-input">
+
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="tuemail@email.com" required>
+                </div>
+<div class="form-input">
+
+    <label for="telefono">Telefono</label>
+    <input type="telefono" id="telefono" name="telefono" placeholder="Ej:351-12345678">
+</div>
+<div class="form-input">
+
+    <label for="motivo">Motivo de consulta</label>
+    <select name="motivo" id="motivo" required>
+        <option value="">Selecciona una opcion</option>
+        <option value="compra">Consulta sobre compra</option>
+        <option value="envio">Consulta sobre envio</option>
+        <option value="otro">Otro</option>
+    </select>
+</div>
+
+                <div class="novedades form-input">
+
+                    <p>¿Querés recibir novedades?</p>
+                    <input type="checkbox" name="novedades" value="si">
+                </div>
+<div class="form-input">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribi tu mensaje"></textarea>
+
+    <div class="botones-form">
+        <button type="submit" class="btn">Enviar</button>
+        <button type="reset" class="btn">Borrar</button>
+    </div>
+</div>
             </form>
 
         </section>
