@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo practico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Gym Shop</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a GymShop</h2>
+            <p>Aqui encontraras toda la ropa que necesitas para ir a entrenar</p>
+            <img src="./img/tp.gym.jpg" alt="foto inicio">
+        </section>
+        <section id="productos">
+            <h2>Productos seleccionados</h2>
+           <p>Encuentra la mejor ropa y accesorios para tus entrenamientos</p>
+           <div class="grid-productos">
+            <div class="producto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_867147-MLA84485701487_052025-O.webp" alt="remera">
+                <h3>Remera</h3>
+                <p>$7000</p>
+                <a href="#"class="btn">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.81x7XBhpVN_KhYHuynbELwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="top">
+                <h3>Top puma</h3>
+                <p>$5000</p>
+                <a href="#"class="btn">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.rFiN_2adUTZyCSuAzj4IuAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="short">
+                <h3>Short</h3>
+                <p>$6000</p>
+                <a href="#"class="btn">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_899119-MLA74369485610_022024-O.webp" alt="calzas">
+                <h3>Calzas</h3>
+                <p>$10.000</p>
+                <a href="#"class="btn">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.hch10XDIb9XC41NGI11fHQHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="medias">
+                <h3>Medias</h3>
+                <p>$2000</p>
+                <a href="#"class="btn">Agregar al carrito</a>
+            </div>
+           </div>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas Especiales</h2>
+            <p>Aprovecha los mejores descuentos de la semana</p>
+
+            <div class="grid-productos">
+                <div class="producto oferta">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_867147-MLA84485701487_052025-O.webp" alt="remera">
+                    <h3>Remera deportiva</h3>
+                    <p class="precio-anterior">$7000</p>
+                    <p class="precio-oferta">$5000</p>
+                    <a href="#"class= "btn">Agregar al carrito</a>
+                </div>
+                <div class="producto oferta">
+                    <img src="https://th.bing.com/th/id/OIP.hch10XDIb9XC41NGI11fHQHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="medias">
+                    <h3>Medias</h3>
+                    <p class="precio-anterior">$2000</p>
+                    <p class="precio-oferta">$1000</p>
+                    <a href="#"class="btn">Agregar al carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <p>Dejanos tu consulta y te contestaremos en la brevedad.</p>
+            <form class="form-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" name="email" placeholder="tuemail@email.com" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="telefono" id="telefono" name="telefono" placeholder="Ej:351-12345678">
+
+                <label for="motivo">Motivo de consulta</label>
+                <select name="motivo" id="motivo" required>
+                    <option value="">Selecciona una opcion</option>
+                    <option value="compra">Consulta sobre compra</option>
+                    <option value="envio">Consulta sobre envio</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <p>¿Querés recibir novedades?</p>
+                <label><input type="radio" name="novedades" value="si">Si</label>
+                <label><input type="radio" name="novedades" value="no">No</label>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribi tu mensaje"></textarea>
+
+                <div class="botones-form">
+                    <button type="submit" class="btn">Enviar</button>
+                    <button type="reset" class="btn">Borrar</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GymShop - Todos los derechos reservados </p>
+        <p>Seguinos en 
+            <a href="#"><i class="bi bi facebook"></i></a>
+            <a href="#"><i class="bi bi instagram"></i></a>
+        </p>
+
+    </footer>
+    
+</body>
+</html>
